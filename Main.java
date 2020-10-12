@@ -2,15 +2,21 @@ public class Main
 {
    public static void main(String[] args)
    {
-     boolean CorrectNumber = true;
+     boolean CorrectNumber = false;
      if (CorrectNumber)
      {
-         System.out.println("You Win! ");
+         System.out.println("You Win!");
      }
      else
      {
-         System.out.println("Try again text time ");
+       while(CorrectNumber != true)
+       {
+        System.out.println("Try again next time ");
+       }
      }
-     System.out.println("after conditional");
+
+     }
+     System.out.println("Play again? ");
    }
 }
+
