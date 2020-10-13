@@ -4,6 +4,9 @@ public class Main
    {
      //receive input from user and save it to a variable //named userGuess
 
+      Scanner scan  = new Scanner(System.in);
+      System.out.print("Whats your guess?");
+      scan.nextInt();
      int correctNumber = 8;
      if (userGuess == correctNumber)
      {
