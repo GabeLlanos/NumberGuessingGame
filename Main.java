@@ -2,21 +2,27 @@ public class Main
 {
    public static void main(String[] args)
    {
-     boolean CorrectNumber = false;
-     if (CorrectNumber)
+     //receive input from user and save it to a variable //named userGuess
+
+     int correctNumber = 8;
+     if (userGuess == correctNumber)
      {
          System.out.println("You Win!");
      }
      else
      {
-       while(CorrectNumber != true)
+       while( userGuess != correctNumber)
        {
-        System.out.println("Try again next time ");
+         //take in user input and save it to the pre-declared variable named userGuess
+         if (userGuess == correctNumber)
+         { 
+           System.out.println("You Win!");
+        } else {
+          System.out.println("Try again next time ");
+        }
+        
        }
      }
-
-     }
-     System.out.println("Play again? ");
    }
 }
 
